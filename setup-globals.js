@@ -1,20 +1,20 @@
-async function test(title, callback) {
-  try {
-    await callback()
-    console.log(`✓ ${title}`)
-  } catch (error) {
-    console.error(`✕ ${title}`)
-    console.error(error)
+function expect(result){
+  return {
+    toBeEqual(expected) {
+      if (result != expected) {
+        throw new Error(`${result} does not match with ${expected}`)
+      }
+    }
   }
 }
 
-function expect(actual) {
-  return {
-    toBe(expected) {
-      if (actual !== expected) {
-        throw new Error(`${actual} is not equal to ${expected}`)
-      }
-    }
+async function test(title, callback) {
+  try {
+    await callback();
+    console.info(`✓ ${title}` )
+  } catch (e) {
+    console.info(`x ${title}`)
+    console.error(e)
   }
 }
 
