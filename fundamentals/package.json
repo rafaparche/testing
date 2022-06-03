@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A repo for my JavaScript Testing Fundamentals course",
   "scripts": {
-    "test": "jest"
+    "test": "../node_modules/.bin/jest"
   },
   "keywords": [],
   "license": "MIT",
