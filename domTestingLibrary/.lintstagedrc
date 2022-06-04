@@ -1,0 +1,9 @@
+{
+  "**/*.js": [
+    "jest --findRelatedTests"
+  ],
+  "**/*.+(js)": [
+    "prettier --write",
+    "git add"
+  ]
+}
