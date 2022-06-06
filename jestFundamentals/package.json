@@ -13,11 +13,13 @@
     "setup": "npm run setup && npm run validate"
   },
   "devDependencies": {
+    "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/preset-env": "^7.0.11",
     "@babel/preset-react": "^7.0.11",
+    "@testing-library/react": "^12.1.5",
     "babel-core": "7.0.0-bridge.0",
     "babel-loader": "^8.0.0-beta.4",
     "babel-plugin-emotion": "^9.2.4",
@@ -25,7 +27,9 @@
     "eslint": "^6.0.0",
     "eslint-config-kentcdodds": "^14.0.0",
     "file-loader": "^1.1.11",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "prettier": "^1.13.7",
     "prop-types": "^15.6.2",
     "serve": "^9.1.0",
