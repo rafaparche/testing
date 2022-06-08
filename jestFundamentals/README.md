@@ -1,6 +1,16 @@
 #Notes
 
-### jest.toMatchInlineSnapshot
+## jest.toMatchInlineSnapshot
 A matcher for self updating testing outputs each time source has been updated, on next run test fails and will ask to update snapshot.
 
 `npm test -- -u`
+
+##setupFilesAfterEnv
+this option in jest.config runs some code immediately after the test framework has been installed in the environment but before the test code itself.
+
+`import * as jestDOM from @testing-library/jest-dom/extend-expect"
+expect.extend(jestDOM)`
+
+above block can be replaced on setup
+
+`setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect']`
