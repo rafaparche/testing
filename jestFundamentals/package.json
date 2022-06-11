@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "test": "jest",
+    "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch",
     "dev": "webpack-serve",
     "build": "webpack --mode=production",
     "postbuild": "cp ./public/index.html ./dist/index.html",

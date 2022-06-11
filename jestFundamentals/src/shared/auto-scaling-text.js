@@ -7,6 +7,7 @@ class AutoScalingText extends React.Component {
     children: PropTypes.node,
   }
   node = React.createRef()
+  debugger
   getScale() {
     const node = this.node.current
     if (!node) {
