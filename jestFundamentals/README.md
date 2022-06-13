@@ -14,3 +14,9 @@ expect.extend(jestDOM)`
 above block can be replaced on setup
 
 `setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect']`
+
+#Pending
+below are pending to be extended because maybe react-script has a different solution
+- split jest config by projects
+- install jest watch plugin and typeahead plugin
+- run tests by last commit
